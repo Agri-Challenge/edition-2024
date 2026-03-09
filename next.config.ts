@@ -1,15 +1,12 @@
 import type { NextConfig } from "next";
 
-const isProd = process.env.NODE_ENV === "production";
-const repoBasePath = "/agri-challenge-website";
+const repoBasePath = "/agri-challenge-website"; // must match Pages URL path exactly
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: isProd ? repoBasePath : "",
-  assetPrefix: isProd ? repoBasePath : "",
-  images: {
-    unoptimized: true,
-  },
+  basePath: repoBasePath,
+  assetPrefix: repoBasePath,
+  images: { unoptimized: true },
 };
 
 export default nextConfig;
