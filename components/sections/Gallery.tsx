@@ -1,15 +1,16 @@
 import { Camera } from 'lucide-react';
 import SectionHeading from '@/components/ui/SectionHeading';
 import AnimatedSection from '@/components/ui/AnimatedSection';
+import { withBasePath } from '@/lib/basePath';
 
 const photos: { src: string; caption: string }[] = [
-  { src: '/gallery/449283692_453840544078337_3062955274637159106_n.jpg', caption: '' },
-  { src: '/gallery/449283952_453840444078347_9162789896486431683_n.jpg', caption: '' },
-  { src: '/gallery/449284465_453840777411647_184891331937698134_n.jpg',  caption: '' },
-  { src: '/gallery/449454377_453840700744988_3412690726136296149_n.jpg', caption: '' },
-  { src: '/gallery/449454960_453840880744970_8303934576964858906_n.jpg', caption: '' },
-  { src: '/gallery/449455194_453840417411683_8132243868666635351_n.jpg', caption: '' },
-  { src: '/gallery/449457304_453840854078306_6860469379919546755_n.jpg', caption: '' },
+  { src: withBasePath('/gallery/449283692_453840544078337_3062955274637159106_n.jpg'), caption: '' },
+  { src: withBasePath('/gallery/449283952_453840444078347_9162789896486431683_n.jpg'), caption: '' },
+  { src: withBasePath('/gallery/449284465_453840777411647_184891331937698134_n.jpg'),  caption: '' },
+  { src: withBasePath('/gallery/449454377_453840700744988_3412690726136296149_n.jpg'), caption: '' },
+  { src: withBasePath('/gallery/449454960_453840880744970_8303934576964858906_n.jpg'), caption: '' },
+  { src: withBasePath('/gallery/449455194_453840417411683_8132243868666635351_n.jpg'), caption: '' },
+  { src: withBasePath('/gallery/449457304_453840854078306_6860469379919546755_n.jpg'), caption: '' },
 ];
 
 export default function Gallery() {

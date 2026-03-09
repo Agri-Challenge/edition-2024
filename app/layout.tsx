@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import { BASE_PATH } from "@/lib/basePath";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -30,10 +31,10 @@ export const metadata: Metadata = {
   ],
   icons: {
     icon: [
-      { url: '/logo/agriChallenge-logo.png', type: 'image/png' },
-      { url: '/logo/agriChallenge-logo.svg', type: 'image/svg+xml' },
+      { url: `${BASE_PATH}/logo/agriChallenge-logo.png`, type: 'image/png' },
+      { url: `${BASE_PATH}/logo/agriChallenge-logo.svg`, type: 'image/svg+xml' },
     ],
-    apple: '/logo/agriChallenge-logo.png',
+    apple: `${BASE_PATH}/logo/agriChallenge-logo.png`,
   },
   openGraph: {
     title: "AgrI Challenge",
