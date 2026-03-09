@@ -4,7 +4,7 @@
  * does NOT automatically prefix with the basePath.
  */
 export const BASE_PATH =
-  process.env.NODE_ENV === "production" ? "/agri-chllenge-website" : "";
+  process.env.NODE_ENV === "production" ? "/agri-challenge-website" : "";
 
 export function withBasePath(path: string): string {
   return `${BASE_PATH}${path}`;
