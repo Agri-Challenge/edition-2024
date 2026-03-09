@@ -1,11 +1,9 @@
 import type { NextConfig } from "next";
 
-const repoBasePath = "/agri-challenge-website"; // must match Pages URL path exactly
-
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: repoBasePath,
-  assetPrefix: repoBasePath,
+  basePath: "/agri-challenge-website",
+  assetPrefix: "/agri-challenge-website",
   images: { unoptimized: true },
 };
 
