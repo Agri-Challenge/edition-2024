@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { withBasePath } from '@/lib/basePath';
 
 const quickLinks = [
   { label: 'Overview', href: '#overview' },
@@ -22,14 +23,14 @@ export default function Footer() {
           <div className="md:col-span-1">
             <div className="flex items-center gap-3 mb-4">
               <Image
-                src="/logo/agriChallenge-logo.svg"
+                src={withBasePath("/logo/agriChallenge-logo.svg")}
                 alt="AgrI Challenge icon"
                 width={32}
                 height={32}
               />
               <div className="relative h-6 w-[140px]">
                 <Image
-                  src="/logo/agrichallenge-title-white.svg"
+                  src={withBasePath("/logo/agrichallenge-title-white.svg")}
                   alt="AgrI Challenge"
                   fill
                   className="object-contain object-left"

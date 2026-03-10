@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import { ArrowRight, BookOpen, Images, Users, Leaf } from 'lucide-react';
+import { withBasePath } from '@/lib/basePath';
 
 interface CountUpProps {
   end: number;
@@ -92,7 +93,7 @@ export default function Hero() {
         {/* Logo icon */}
         <div className="mb-8 relative w-20 h-20 drop-shadow-2xl animate-[fadeIn_0.6s_ease-out_forwards]">
           <Image
-            src="/logo/agriChallenge-logo.svg"
+            src={withBasePath("/logo/agriChallenge-logo.svg")}
             alt="AgrI Challenge logo"
             fill
             className="object-contain"
@@ -108,9 +109,15 @@ export default function Hero() {
         </div>
 
         {/* Headline */}
-        <h1 className="heading-display text-white mb-4 max-w-3xl">
-          AgrI Challenge
-        </h1>
+        <div className="relative h-16 w-[320px] sm:w-[420px] md:w-[520px] mb-4 drop-shadow-lg">
+          <Image
+            src={withBasePath("/logo/agrichallenge-title-white.svg")}
+            alt="AgrI Challenge"
+            fill
+            className="object-contain"
+            priority
+          />
+        </div>
 
         {/* Subheadline */}
         <p className="text-lg md:text-xl font-medium text-white/80 mb-6 max-w-2xl leading-relaxed tracking-tight">

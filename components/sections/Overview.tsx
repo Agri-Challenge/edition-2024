@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { Users, Brain } from 'lucide-react';
 import SectionHeading from '@/components/ui/SectionHeading';
 import AnimatedSection from '@/components/ui/AnimatedSection';
+import { withBasePath } from '@/lib/basePath';
 
 const phases = [
   {
@@ -48,7 +49,7 @@ export default function Overview() {
               />
               <div className="relative w-24 h-24 transition-all duration-500 ease-out group-hover:scale-110 group-hover:rotate-6 drop-shadow-lg group-hover:drop-shadow-2xl">
                 <Image
-                  src="/logo/agriChallenge-logo.svg"
+                  src={withBasePath("/logo/agriChallenge-logo.svg")}
                   alt="AgrI Challenge logo"
                   fill
                   className="object-contain"

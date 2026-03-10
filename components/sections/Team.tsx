@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { Mail, ExternalLink } from 'lucide-react';
 import SectionHeading from '@/components/ui/SectionHeading';
 import AnimatedSection from '@/components/ui/AnimatedSection';
+import { withBasePath } from '@/lib/basePath';
 
 const institutions = [
   {
@@ -11,7 +12,7 @@ const institutions = [
     description:
       'A long-established agronomic institution in Algeria, founded in 1905. The experimental and teaching facilities at ENSA, El Harrach, provided access to representative agro-ecosystems and well-maintained plant collections.',
     location: 'El Harrach, Algiers, Algeria',
-    logo: '/logo/ensa_logo.jpg',
+    logo: withBasePath('/logo/ensa_logo.jpg'),
     website: 'https://www.ensa.dz',
   },
   {
@@ -21,7 +22,7 @@ const institutions = [
     description:
       'A national center of excellence dedicated to education and research in artificial intelligence and data science. ENSIA specialists in AI and machine learning mentored teams throughout the modeling phase.',
     location: 'Algiers, Algeria',
-    logo: '/logo/ensia_logo.png',
+    logo: withBasePath('/logo/ensia_logo.png'),
     website: 'https://www.ensia.edu.dz',
   },
 ];
