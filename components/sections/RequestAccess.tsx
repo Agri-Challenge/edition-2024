@@ -10,7 +10,7 @@ import AnimatedSection from '@/components/ui/AnimatedSection';
 // 1. Go to https://web3forms.com and enter your notification email.
 // 2. You will receive an Access Key by email – paste it below.
 // 3. hCaptcha is enabled by default on Web3Forms; no extra setup needed.
-const WEB3FORMS_ACCESS_KEY = 'e631b2ab-e7c6-4586-817a-78bca1ff70d0';
+const WEB3FORMS_ACCESS_KEY = '220a792d-a7b1-4e37-87db-b2f8b652553c';
 // ─────────────────────────────────────────────────────────────────────────────
 
 // ─── hCaptcha ─────────────────────────────────────────────────────────────────
